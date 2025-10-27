@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vj0-q6-H7x">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Strings analyze-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Strings analyze" customClass="ViewController" customModule="LocalizableTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nb-Es-NgK">
+                                <rect key="frame" x="127" y="454" width="139" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="选择文件目录"/>
+                                <buttonConfiguration key="configuration" style="plain" title="选择文件目录">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectFolderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8Z-4s-HHK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Nb-Es-NgK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0RN-ZN-AuY"/>
+                            <constraint firstItem="8Nb-Es-NgK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zXD-Tk-scd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RcD-dD-5Vz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="868"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kg8-8R-yvJ">
+            <objects>
+                <navigationController id="Vj0-q6-H7x" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pQr-n6-c0c">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xsq-23-afR" kind="relationship" relationship="rootViewController" id="Rx3-ix-2Gy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYg-MU-TEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2257" y="689"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v79-Jb-bga">
+            <objects>
+                <viewController id="xsq-23-afR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZr-O2-Shl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkY-R4-wxa">
+                                <rect key="frame" x="44" y="250" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="b6q-cE-Msl"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Excel to strings"/>
+                                <connections>
+                                    <segue destination="F6T-RY-ydm" kind="push" id="CP4-KA-zHu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJU-gr-1Be">
+                                <rect key="frame" x="44" y="350" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="eSg-N2-GNT"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Excel to string catalog"/>
+                                <connections>
+                                    <segue destination="QbQ-DF-adb" kind="push" id="WXM-R8-zmJ"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyT-j0-xhb">
+                                <rect key="frame" x="44" y="450" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5nW-i0-Ait"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Strings analyze"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="R5o-Mh-Bsa"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-xn-xXY">
+                                <rect key="frame" x="44" y="550" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Y9D-bP-Ap6"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="merge string catalog"/>
+                                <connections>
+                                    <segue destination="3wZ-W9-6Or" kind="push" id="sSx-zm-qdQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I8O-KT-XhA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UBI-xn-xXY" firstAttribute="top" secondItem="vyT-j0-xhb" secondAttribute="bottom" constant="44" id="36g-y5-R6p"/>
+                            <constraint firstItem="vyT-j0-xhb" firstAttribute="centerX" secondItem="I8O-KT-XhA" secondAttribute="centerX" id="6eN-X9-im7"/>
+                            <constraint firstItem="fJU-gr-1Be" firstAttribute="leading" secondItem="I8O-KT-XhA" secondAttribute="leading" constant="44" id="Cu2-85-Ar7"/>
+                            <constraint firstItem="fJU-gr-1Be" firstAttribute="top" secondItem="IkY-R4-wxa" secondAttribute="bottom" constant="44" id="LHg-4U-a0B"/>
+                            <constraint firstItem="UBI-xn-xXY" firstAttribute="leading" secondItem="I8O-KT-XhA" secondAttribute="leading" constant="44" id="SDe-0K-x1l"/>
+                            <constraint firstItem="IkY-R4-wxa" firstAttribute="leading" secondItem="I8O-KT-XhA" secondAttribute="leading" constant="44" id="TKb-9W-P0l"/>
+                            <constraint firstItem="vyT-j0-xhb" firstAttribute="leading" secondItem="I8O-KT-XhA" secondAttribute="leading" constant="44" id="YCS-71-v3J"/>
+                            <constraint firstItem="vyT-j0-xhb" firstAttribute="top" secondItem="fJU-gr-1Be" secondAttribute="bottom" constant="44" id="bjW-rX-fvf"/>
+                            <constraint firstItem="fJU-gr-1Be" firstAttribute="centerX" secondItem="I8O-KT-XhA" secondAttribute="centerX" id="fTh-Yv-jdk"/>
+                            <constraint firstItem="IkY-R4-wxa" firstAttribute="top" secondItem="I8O-KT-XhA" secondAttribute="top" constant="88" id="g4K-gD-Ej5"/>
+                            <constraint firstItem="IkY-R4-wxa" firstAttribute="centerX" secondItem="I8O-KT-XhA" secondAttribute="centerX" id="nWl-TJ-NCN"/>
+                            <constraint firstItem="UBI-xn-xXY" firstAttribute="centerX" secondItem="I8O-KT-XhA" secondAttribute="centerX" id="o7G-Ez-aVf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JSo-0P-2J8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2u-cg-eql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1256" y="-32"/>
+        </scene>
+        <!--Excel to Strings-->
+        <scene sceneID="750-1n-6Pg">
+            <objects>
+                <viewController id="F6T-RY-ydm" userLabel="Excel to Strings" customClass="Excel2StringsController" customModule="LocalizableTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAg-sp-6Of">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-3t-DC0">
+                                <rect key="frame" x="44" y="250" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="M3D-7X-rtw"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select excel file"/>
+                                <connections>
+                                    <action selector="selectExcelFile:" destination="F6T-RY-ydm" eventType="touchUpInside" id="nf1-Lf-nvQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIt-5b-BsH">
+                                <rect key="frame" x="44" y="350" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="2jU-sU-Nzx"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select strings folder"/>
+                                <connections>
+                                    <action selector="selectStringFolder:" destination="F6T-RY-ydm" eventType="touchUpInside" id="GDE-t9-DtN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYd-2B-U3w">
+                                <rect key="frame" x="122" y="506" width="149" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="merge to strings"/>
+                                <connections>
+                                    <action selector="mergeToStrings:" destination="F6T-RY-ydm" eventType="touchUpInside" id="bZk-uf-las"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nP8-2I-Jic">
+                                <rect key="frame" x="44" y="586" width="305" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xMx-us-EMX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RIt-5b-BsH" firstAttribute="top" secondItem="D5Y-3t-DC0" secondAttribute="bottom" constant="44" id="DQG-Yr-6pe"/>
+                            <constraint firstItem="nP8-2I-Jic" firstAttribute="leading" secondItem="xMx-us-EMX" secondAttribute="leading" constant="44" id="JsY-ta-ZGb"/>
+                            <constraint firstItem="xMx-us-EMX" firstAttribute="bottom" secondItem="nP8-2I-Jic" secondAttribute="bottom" constant="88" id="R2t-MH-Z6c"/>
+                            <constraint firstItem="D5Y-3t-DC0" firstAttribute="top" secondItem="xMx-us-EMX" secondAttribute="top" constant="88" id="S1D-ua-1jA"/>
+                            <constraint firstItem="RIt-5b-BsH" firstAttribute="leading" secondItem="xMx-us-EMX" secondAttribute="leading" constant="44" id="X8z-v4-9g1"/>
+                            <constraint firstItem="nYd-2B-U3w" firstAttribute="top" secondItem="RIt-5b-BsH" secondAttribute="bottom" constant="100" id="YoQ-HF-zDa"/>
+                            <constraint firstItem="RIt-5b-BsH" firstAttribute="centerX" secondItem="xMx-us-EMX" secondAttribute="centerX" id="f0e-cE-Dm3"/>
+                            <constraint firstItem="D5Y-3t-DC0" firstAttribute="leading" secondItem="xMx-us-EMX" secondAttribute="leading" constant="44" id="gr7-B5-TY4"/>
+                            <constraint firstItem="nYd-2B-U3w" firstAttribute="centerX" secondItem="xMx-us-EMX" secondAttribute="centerX" id="kHS-1n-9Tl"/>
+                            <constraint firstItem="D5Y-3t-DC0" firstAttribute="centerX" secondItem="xMx-us-EMX" secondAttribute="centerX" id="nF1-cu-2MH"/>
+                            <constraint firstItem="nP8-2I-Jic" firstAttribute="centerX" secondItem="xMx-us-EMX" secondAttribute="centerX" id="sqR-dF-Ghg"/>
+                            <constraint firstItem="nP8-2I-Jic" firstAttribute="top" secondItem="nYd-2B-U3w" secondAttribute="bottom" constant="45" id="ykK-R5-Hlo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nJe-bo-26R"/>
+                    <connections>
+                        <outlet property="excelbtn" destination="D5Y-3t-DC0" id="U9X-sa-hmv"/>
+                        <outlet property="logTV" destination="nP8-2I-Jic" id="hMe-lB-Eyj"/>
+                        <outlet property="stringsFolderBtn" destination="RIt-5b-BsH" id="l7A-jm-7FI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgf-uB-7X8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2257" y="-805"/>
+        </scene>
+        <!--Excel to String Catalog-->
+        <scene sceneID="vaO-Zy-1k9">
+            <objects>
+                <viewController id="QbQ-DF-adb" userLabel="Excel to String Catalog" customClass="Excel2StringCatalogController" customModule="LocalizableTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFk-S8-q0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tc-w7-E2V">
+                                <rect key="frame" x="44" y="250" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="lds-wd-pxT"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select excel file"/>
+                                <connections>
+                                    <action selector="selectExcelFile:" destination="QbQ-DF-adb" eventType="touchUpInside" id="aa1-Hj-qJY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsW-xx-OV1">
+                                <rect key="frame" x="44" y="350" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="OdM-aA-O99"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select string catalog file"/>
+                                <connections>
+                                    <action selector="selectStringFolder:" destination="QbQ-DF-adb" eventType="touchUpInside" id="fJG-Qp-F4B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-EC-dCT">
+                                <rect key="frame" x="96.333333333333329" y="506" width="200.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="merge to string catalog"/>
+                                <connections>
+                                    <action selector="mergeToStrings:" destination="QbQ-DF-adb" eventType="touchUpInside" id="i3Z-gJ-e6v"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8EY-Lq-V57">
+                                <rect key="frame" x="44" y="586" width="305" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y7w-Cf-3fU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8EY-Lq-V57" firstAttribute="top" secondItem="aKP-EC-dCT" secondAttribute="bottom" constant="45" id="22K-ms-RBm"/>
+                            <constraint firstItem="AsW-xx-OV1" firstAttribute="leading" secondItem="y7w-Cf-3fU" secondAttribute="leading" constant="44" id="4ox-zy-fED"/>
+                            <constraint firstItem="8EY-Lq-V57" firstAttribute="centerX" secondItem="y7w-Cf-3fU" secondAttribute="centerX" id="5Zw-dC-wPW"/>
+                            <constraint firstItem="8tc-w7-E2V" firstAttribute="centerX" secondItem="y7w-Cf-3fU" secondAttribute="centerX" id="QTB-i7-17d"/>
+                            <constraint firstItem="AsW-xx-OV1" firstAttribute="centerX" secondItem="y7w-Cf-3fU" secondAttribute="centerX" id="SEa-15-sgU"/>
+                            <constraint firstItem="8EY-Lq-V57" firstAttribute="leading" secondItem="y7w-Cf-3fU" secondAttribute="leading" constant="44" id="dHT-OP-Bhs"/>
+                            <constraint firstItem="8tc-w7-E2V" firstAttribute="top" secondItem="y7w-Cf-3fU" secondAttribute="top" constant="88" id="dyp-p1-wB3"/>
+                            <constraint firstItem="y7w-Cf-3fU" firstAttribute="bottom" secondItem="8EY-Lq-V57" secondAttribute="bottom" constant="88" id="heX-Xg-xaW"/>
+                            <constraint firstItem="aKP-EC-dCT" firstAttribute="centerX" secondItem="y7w-Cf-3fU" secondAttribute="centerX" id="jly-wR-0OC"/>
+                            <constraint firstItem="AsW-xx-OV1" firstAttribute="top" secondItem="8tc-w7-E2V" secondAttribute="bottom" constant="44" id="o0w-qH-0VN"/>
+                            <constraint firstItem="aKP-EC-dCT" firstAttribute="top" secondItem="AsW-xx-OV1" secondAttribute="bottom" constant="100" id="tVY-Wy-mc8"/>
+                            <constraint firstItem="8tc-w7-E2V" firstAttribute="leading" secondItem="y7w-Cf-3fU" secondAttribute="leading" constant="44" id="ztz-Wo-sKu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="db6-dq-X7t"/>
+                    <connections>
+                        <outlet property="excelbtn" destination="8tc-w7-E2V" id="VIg-Ss-wpw"/>
+                        <outlet property="logTV" destination="8EY-Lq-V57" id="ZxJ-Sk-79J"/>
+                        <outlet property="stringCatalogBtn" destination="AsW-xx-OV1" id="2YJ-iJ-5kC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFa-ME-dQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="-848"/>
+        </scene>
+        <!--Merge String Catalog-->
+        <scene sceneID="srf-vC-eFS">
+            <objects>
+                <viewController id="3wZ-W9-6Or" userLabel="Merge String Catalog" customClass="MergeStringCatalogController" customModule="LocalizableTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q4W-jI-gbd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWz-k5-okB">
+                                <rect key="frame" x="44" y="250" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="A36-M4-X7i"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select string catalog file1"/>
+                                <connections>
+                                    <action selector="selectStringCatalog1:" destination="3wZ-W9-6Or" eventType="touchUpInside" id="A90-ms-ocu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbU-o8-W2k">
+                                <rect key="frame" x="44" y="350" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.60784313729999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="otu-rq-0Gn"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select string catalog file2"/>
+                                <connections>
+                                    <action selector="selectStringCatalog2:" destination="3wZ-W9-6Or" eventType="touchUpInside" id="bxY-il-khu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-fu-9NJ">
+                                <rect key="frame" x="96.333333333333329" y="506" width="200.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="merge to string catalog"/>
+                                <connections>
+                                    <action selector="mergeToStringCatalog:" destination="3wZ-W9-6Or" eventType="touchUpInside" id="1iD-gi-SzD"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vyG-Qi-sbS">
+                                <rect key="frame" x="44" y="586" width="305" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qfY-dp-t7c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vyG-Qi-sbS" firstAttribute="top" secondItem="lVL-fu-9NJ" secondAttribute="bottom" constant="45" id="2Sd-z7-M58"/>
+                            <constraint firstItem="cWz-k5-okB" firstAttribute="centerX" secondItem="qfY-dp-t7c" secondAttribute="centerX" id="4XM-pU-iDY"/>
+                            <constraint firstItem="lVL-fu-9NJ" firstAttribute="centerX" secondItem="qfY-dp-t7c" secondAttribute="centerX" id="KRf-Bd-eBE"/>
+                            <constraint firstItem="gbU-o8-W2k" firstAttribute="top" secondItem="cWz-k5-okB" secondAttribute="bottom" constant="44" id="LOl-c7-3su"/>
+                            <constraint firstItem="lVL-fu-9NJ" firstAttribute="top" secondItem="gbU-o8-W2k" secondAttribute="bottom" constant="100" id="MHB-WA-7Ue"/>
+                            <constraint firstItem="cWz-k5-okB" firstAttribute="leading" secondItem="qfY-dp-t7c" secondAttribute="leading" constant="44" id="OwX-Wa-Hh9"/>
+                            <constraint firstItem="gbU-o8-W2k" firstAttribute="leading" secondItem="qfY-dp-t7c" secondAttribute="leading" constant="44" id="SuM-6G-mqw"/>
+                            <constraint firstItem="qfY-dp-t7c" firstAttribute="bottom" secondItem="vyG-Qi-sbS" secondAttribute="bottom" constant="88" id="ccW-S4-l0I"/>
+                            <constraint firstItem="cWz-k5-okB" firstAttribute="top" secondItem="qfY-dp-t7c" secondAttribute="top" constant="88" id="eiV-Fl-pWI"/>
+                            <constraint firstItem="vyG-Qi-sbS" firstAttribute="leading" secondItem="qfY-dp-t7c" secondAttribute="leading" constant="44" id="plM-EL-V3U"/>
+                            <constraint firstItem="gbU-o8-W2k" firstAttribute="centerX" secondItem="qfY-dp-t7c" secondAttribute="centerX" id="vPa-WG-7VQ"/>
+                            <constraint firstItem="vyG-Qi-sbS" firstAttribute="centerX" secondItem="qfY-dp-t7c" secondAttribute="centerX" id="xDe-hP-ukJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kr9-A3-syC"/>
+                    <connections>
+                        <outlet property="logTV" destination="vyG-Qi-sbS" id="2iO-Sp-bCV"/>
+                        <outlet property="stringCatalogBtn1" destination="cWz-k5-okB" id="wUI-Dn-wAo"/>
+                        <outlet property="stringCatalogBtn2" destination="gbU-o8-W2k" id="Qv4-IA-Mpc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QjR-Ol-UGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="-54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

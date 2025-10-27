@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DescView" customModule="LocalizableTool" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-H7-XMl">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="97"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeY-9B-8F1">
+                    <rect key="frame" x="81" y="0.0" width="288" height="97"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sza-eD-Lfb">
+                    <rect key="frame" x="24" y="37.666666666666664" width="41" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sza-eD-Lfb" firstAttribute="centerY" secondItem="4lJ-H7-XMl" secondAttribute="centerY" id="4kc-Tp-nZb"/>
+                <constraint firstAttribute="bottom" secondItem="zeY-9B-8F1" secondAttribute="bottom" id="EaS-0a-T74"/>
+                <constraint firstItem="zeY-9B-8F1" firstAttribute="centerY" secondItem="4lJ-H7-XMl" secondAttribute="centerY" id="GWu-qF-3ob"/>
+                <constraint firstItem="sza-eD-Lfb" firstAttribute="leading" secondItem="4lJ-H7-XMl" secondAttribute="leading" constant="24" id="Zga-XK-OqP"/>
+                <constraint firstAttribute="trailing" secondItem="zeY-9B-8F1" secondAttribute="trailing" constant="24" id="bLX-WF-Us6"/>
+                <constraint firstItem="zeY-9B-8F1" firstAttribute="leading" secondItem="sza-eD-Lfb" secondAttribute="trailing" constant="16" id="fkR-UB-Bcq"/>
+                <constraint firstItem="zeY-9B-8F1" firstAttribute="top" secondItem="4lJ-H7-XMl" secondAttribute="top" id="uwp-nY-x9j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.64122137404578" y="-79.225352112676063"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
