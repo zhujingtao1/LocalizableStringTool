@@ -17,7 +17,7 @@ class LocalizationWriter {
         var alreadyExistTrans = StringsFileParser.parseStringsFile(at: fileURL)
         
         // 3️⃣ 合并新翻译（新值覆盖旧值）
-        alreadyExistTrans.merge(newTranslate) { _, new in new }
+        alreadyExistTrans.mergeIgnoringCaseKeepingOriginalKey(newTranslate)
         
         // 4️⃣ 清空原文件内容
         try? FileManager.default.removeItem(at: fileURL)
@@ -90,5 +90,30 @@ class LocalizationWriter {
         }
         
         return result
+    }
+}
+
+// 防止excel中key大小写混乱
+extension Dictionary where Key == String {
+    mutating func mergeIgnoringCaseKeepingOriginalKey(_ other: [String: Value]) {
+        
+        // 先建立一个 lowercase key -> original key 的映射
+        var loweredKeyMap: [String: String] = [:]
+        for key in self.keys {
+            loweredKeyMap[key.lowercased()] = key
+        }
+        
+        for (newKey, newValue) in other {
+            let lowered = newKey.lowercased()
+            
+            if let originalKey = loweredKeyMap[lowered] {
+                // 已存在（大小写不同也视为同一个 key）
+                self[originalKey] = newValue
+            } else {
+                // 新 key，加入，并记录映射
+                self[newKey] = newValue
+                loweredKeyMap[lowered] = newKey
+            }
+        }
     }
 }
